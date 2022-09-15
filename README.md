@@ -12,6 +12,8 @@ Parcial 1
 
 * SOLID
   * Single Responsability \
+  <img width="229" alt="image" src="https://user-images.githubusercontent.com/98657146/190303499-89934b60-b88b-42c0-8b83-261724906a28.png">
+
   
     
   
