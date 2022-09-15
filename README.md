@@ -31,7 +31,7 @@ Parcial 1
           <img width="170" alt="image" src="https://user-images.githubusercontent.com/98657146/190306428-ca1579b9-9a54-4cba-aa5d-1e7318f396fd.png">
         * Retorna una casilla  
           <img width="137" alt="image" src="https://user-images.githubusercontent.com/98657146/190306509-4d6b1fc4-524d-4c06-97fb-e361c809d99f.png">
-       * Cómo lo solucionariamos? Para iniciar se debe proceder a identificar los diferentes procedimientos en el método como lo hicimos en el inciso superior, procediendo así a modulizar la lógica en diferentes funciones que se sean declaradas dentro de este.
+       * **Cómo lo solucionariamos?** Para iniciar se debe proceder a identificar los diferentes procedimientos en el método como lo hicimos en el inciso superior, procediendo así a modulizar la lógica en diferentes funciones que se sean declaradas dentro de este.
 
   
     
