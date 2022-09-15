@@ -12,7 +12,17 @@ Parcial 1
 
 * SOLID
   * Single Responsability \
-  <img width="229" alt="image" src="https://user-images.githubusercontent.com/98657146/190303499-89934b60-b88b-42c0-8b83-261724906a28.png">
+    * Podemos encontrar el metodo moveTile dentro de la clase Player el cual se comporta como un "Metodo Dios"
+      <img width="229" alt="image" src="https://user-images.githubusercontent.com/98657146/190303499-89934b60-b88b-42c0-8b83-261724906a28.png"> \
+      Funcionalidades que violan el principio:
+      * Obtiene el indice de su casilla
+      * Verifica el tipo de ficha
+      * Mata/remueve fichas dentro de la casilla
+      * Obtiene un JPanel y un JButton de la view
+      * Redimensiona el JButton
+      * Renderisa la vista
+      * Informa a la clase principal si hay un ganador
+      * Retorna una casilla
 
   
     
