@@ -16,6 +16,19 @@ Parcial 1
   <img width="467" alt="image" src="https://user-images.githubusercontent.com/98657146/190298474-af7120eb-b3d1-41d8-ab0c-9339f5e6e1cd.png">
 
 * El otro integrante, pasó a hacer un fork del proyecto para así tener una copia de este archivo sin tener que modificar nada en el original
+![image](https://user-images.githubusercontent.com/98657146/190655200-d58d510c-989f-4bf4-bef3-fc69da760d64.png)
+
+* Vemos que queda guardado en el repositorio remoto del otro integrante, dando los créditos al autor original 
+![image](https://user-images.githubusercontent.com/98657146/190655697-0576e1e4-a2fc-4630-b7b4-06b5262e8847.png)
+
+* Posteriormente clona el proyecto para tenerlo en su repositorio local por si quiere hacer un cambio, se clona con el comando “git clone”
+![image](https://user-images.githubusercontent.com/98657146/190655825-f032a019-a1d0-4208-b45a-14b0bb6a34b0.png)
+
+* Después de esto , se modificó el Readme , añadiendo los comentarios y pasos siguientes para agregar actualizaciones en el repositorio (usando commit y push) para ello se usaron los siguientes comandos:
+![image](https://user-images.githubusercontent.com/98657146/190655956-af338d15-5e18-4351-9da7-f9958251aa1a.png)
+
+* Vemos que sale el commit que se asignó 
+![image](https://user-images.githubusercontent.com/98657146/190656095-e9285114-7aa8-4d1e-a80f-a4f61de78767.png)
 
 
 ### CraftsmanShip
