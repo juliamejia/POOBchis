@@ -150,10 +150,10 @@ En este caso el repositorio remoto, es el que está en git y el local es el que 
   ![image](https://user-images.githubusercontent.com/98657146/190739058-9149a052-6438-4cbf-8200-44a439bd96a9.png)  
   
 * Capa vista: Es responsable de generar la interfaz de nuestra aplicación, es decir, de componer las pantallas, paginas o cualquier tipo de resultado utilizable por   el usuario o cliente del sistema.
-  Cuando las vistas componen la interfaz de usuario de una aplicación, deberán contener los elementos de interacción que permitan al usuario enviar información e     invocar acciones en el sistema, como botones, cuadros de edición o cualquier otro tipo de elemento  
-  En este caso el proyecto POOBCHIS tiene la vista ya que tiene una capa presentación la cual se encarga de crear la interfaz del juego e interactuar con el usuario   para guardar los datos del juego  
-  ![image](https://user-images.githubusercontent.com/98657146/190742043-47adc59e-2d7c-4fa4-9959-8afb0e19919e.png)  
-  Apenas corremos la aplicación, nos pide los datos de los jugadores y a lo ultimo despliega el tablero del juego , de esto se compone la capa de presentación de     este proyecto 
+Cuando las vistas componen la interfaz de usuario de una aplicación, deberán contener los elementos de interacción que permitan al usuario enviar información e     invocar acciones en el sistema, como botones, cuadros de edición o cualquier otro tipo de elemento  
+En este caso el proyecto POOBCHIS tiene la vista ya que tiene una capa presentación la cual se encarga de crear la interfaz del juego e interactuar con el usuario   para guardar los datos del juego  
+![image](https://user-images.githubusercontent.com/98657146/190742043-47adc59e-2d7c-4fa4-9959-8afb0e19919e.png)  
+Apenas corremos la aplicación, nos pide los datos de los jugadores y a lo ultimo despliega el tablero del juego, de esto se compone la capa de presentación de este proyecto   
   ![image](https://user-images.githubusercontent.com/98657146/190742529-abc62cbe-b8bb-4533-90d2-3d6da926de7c.png)  
   ![image](https://user-images.githubusercontent.com/98657146/190742764-6d14cee6-edb3-4674-8fae-48159a6d540d.png)  
   ![image](https://user-images.githubusercontent.com/98657146/190742973-62f8bb3e-2ab6-42cf-9976-9cbd1522373a.png)  
