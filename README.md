@@ -84,4 +84,18 @@ En este caso el repositorio remoto, es el que está en git y el local es el que 
 * Tipo del patron
     * Este patron se identifica como un patron de comportamiento dirigido a objetos tal como los especifica la siguiente tabla \
       ![image](https://user-images.githubusercontent.com/62759668/190568567-d87bb5f2-8d78-4449-9aa3-9e1bbfaed387.png)
+      
+### UNIT TEST 
+1. Patron de nombramiento:  
+    Para los test del proyecto POOBCHIS vemos que todos tienen una estructura parecida, donde aunque en algunos casos se puede entender lo que hace el test con el       simple nombre, entendemos los test mas por la documentación, para corregir esto deberíamos ponerle un nombre mas diciente , con su escenario correspondiente.
+    * ![image](https://user-images.githubusercontent.com/98657146/190672756-ac434a4a-c271-455e-8664-34fac36ecd63.png)
+      Solución : `void givenOnePerson_whenAddYourNameToPlay_thenCreateThePlayerOnTheBoard ()` Asi podemos entender del nombre que el test quiere verificar que se crea el         jugador en el tablero 
+      
+    * ![image](https://user-images.githubusercontent.com/98657146/190673613-9f89f284-aff9-4af8-9431-e612591bd6eb.png)
+      Solución : `void givenAPlayer_whenRegisteringInTheGame_thenTheGameAllowsYouToPutYourIdentificationData()` Asi podemos entender del nombre que el test quiere               verificar que se le permita al usuario registrarse con sus datos de identificación 
+    
+    * ![image](https://user-images.githubusercontent.com/98657146/190674034-31b18362-741f-4977-8306-b4f706bfb50b.png)
+      Solución : `void givenTheTokensOfThePlayers_WhenTheGameStarts_thenVerifyThatTheyareInTheirRespectiveHouses()` Asi podemos entender con el nombre que el test quiere         verificar que al iniciar el juego , las fichas esten en sus casas  correspondientes
+
+  
 
