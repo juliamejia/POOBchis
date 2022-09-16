@@ -30,6 +30,10 @@ Parcial 1
 * Vemos que sale el commit que se asignó 
 ![image](https://user-images.githubusercontent.com/98657146/190656095-e9285114-7aa8-4d1e-a80f-a4f61de78767.png)
 
+#### Repositorio remoto y local 
+Los repositorios remoto son versiones de un proyecto que estan hospedadas en la red y nos permiten colaborar con otros desarrolladores y el repositorio local es un archivo que tenemos en nuestro ordenador.    
+En este caso el repositorio remoto, es el que está en git y el local es el que guardamos en nuestro computador
+
 
 ### CraftsmanShip
 
