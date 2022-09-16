@@ -164,7 +164,10 @@ Apenas corremos la aplicación, nos pide los datos de los jugadores y a lo ultim
   * Controlador: la misión principal de los componentes incluidos en el controlados es actuar como intermediario entre el usuario y el sistema. Serán capaces de         capturar acciones de este sobre la vista, como puede ser la pulsación de un botón o la selección de una opción de menú, interpretarlas y actuar en función de       ellas.  
     Por ultimo , el proyecto POOBCHIS contiene el controlador ya que es el que guarda los datos y pulsaciones que hace el usuario , para mostrar la interfaz             correspondiente de cada acción 
 
-
+### BIBLIOGRAFIA  
+[mvc](https://www.campusmvp.es/recursos/post/que-es-el-patron-mvc-en-programacion-y-por-que-es-util.aspx)  
+[first](https://www.paradigmadigital.com/dev/principio-first-aumentar-la-calidad-tests-unitarios/)  
+[unitTest](https://www.youtube.com/watch?v=8rKy1juvVmI)  
 
 
 
