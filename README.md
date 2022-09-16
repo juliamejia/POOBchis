@@ -86,7 +86,7 @@ En este caso el repositorio remoto, es el que está en git y el local es el que 
       ![image](https://user-images.githubusercontent.com/62759668/190568567-d87bb5f2-8d78-4449-9aa3-9e1bbfaed387.png)
       
 ### UNIT TEST 
-1. Patron de nombramiento:  
+1. Patrón de nombramiento:  
     Para los test del proyecto POOBCHIS vemos que todos tienen una estructura parecida, donde aunque en algunos casos se puede entender lo que hace el test con el       simple nombre, entendemos los test mas por la documentación, para corregir esto deberíamos ponerle un nombre mas diciente , con su escenario             correspondiente.Para ello vamos a usar la estructura given_when_that.
     * ![image](https://user-images.githubusercontent.com/98657146/190672756-ac434a4a-c271-455e-8664-34fac36ecd63.png)
       Solución : `void givenOnePerson_whenAddYourNameToPlay_thenCreateThePlayerOnTheBoard ()` Asi podemos entender del nombre que el test quiere verificar que se crea el         jugador en el tablero 
@@ -95,7 +95,40 @@ En este caso el repositorio remoto, es el que está en git y el local es el que 
       Solución : `void givenAPlayer_whenRegisteringInTheGame_thenTheGameAllowsYouToPutYourIdentificationData()` Asi podemos entender del nombre que el test quiere               verificar que se le permita al usuario registrarse con sus datos de identificación 
     
     * ![image](https://user-images.githubusercontent.com/98657146/190674034-31b18362-741f-4977-8306-b4f706bfb50b.png)
-      Solución : `void givenTheTokensOfThePlayers_WhenTheGameStarts_thenVerifyThatTheyareInTheirRespectiveHouses()` Asi podemos entender con el nombre que el test quiere         verificar que al iniciar el juego , las fichas esten en sus casas  correspondientes
+      Solución : `void givenTheTokensOfThePlayers_WhenTheGameStarts_thenVerifyThatTheyareInTheirRespectiveHouses()` Asi podemos entender con el nombre que el test         quiere verificar que al iniciar el juego , las fichas esten en sus casas  correspondientes
+2. Patrón AAA
+    * Arrange(Organizar): Inicializa los objetos y establece los valores de los datos que vamos a utilizar en el test que lo contiene
+    * Act (Actuar): Ejecuta el metodo o la acción que vamos a probar 
+    * Asssert (Confirmar): Comprueba que el método de pruebas ejecutado se comporta como teníamos previsto que lo hiciera  
+    **Ejemplo Estructura del patrón AAA** 
+    ![image](https://user-images.githubusercontent.com/98657146/190697341-cc66a26f-f04c-41c7-9fe2-aa38091365a3.png)  
+    
+    * Al ejecutar los test de POOBCHIS nos damos cuenta que violan inmediatamente el principio Arrange  ya que al correr cualquier test , este ejecuta y empieza a         interactuar con el usuario , pidiendo los datos que necesita para realizar el test. Para mostrar lo dicho anteriormente, tomamos como ejemplo el                     shouldAllowNameAndColorPlay 
+    ![image](https://user-images.githubusercontent.com/98657146/190697823-1e73c71c-300a-42ef-a144-4550b08b6cb4.png)  
+    ![image](https://user-images.githubusercontent.com/98657146/190697902-95ab3696-ba6f-48e3-87c4-4371a8f0cfd3.png)  
+    ![image](https://user-images.githubusercontent.com/98657146/190698281-21628550-8be2-494f-8fdd-a6858152af30.png)  
+    ![image](https://user-images.githubusercontent.com/98657146/190698345-e799867a-bde8-4739-9e93-449376513724.png)  
+    Después de digitar los datos necesarios ahí si muestra el resultado del test
+    ![image](https://user-images.githubusercontent.com/98657146/190698445-14d6b627-f5e0-4d5e-89b9-0230b6282378.png)  
+    **Como lo solucionamos?:** Declarando variables con casos clave que se quieran probar en el código 
+    En este ejemplo sería declarar el nombre del jugador y el color para posteriormente correr la prueba y verificar que el resultado que dio es el resultado           esperado.  
+    
+    * Partiendo de que ninguna prueba cumple la estructura AAA debido a que ninguno declara las variables adecuadamente, podemos ver que algunos test tampoco             cumplen la siguiente sigla que es Ejecutar el método que vamos a probar , como este test: ya que no tiene un método especifico para ver verificar este hecho ,       pero cumple con la ultima A que es comportarse como el desarrollador tenia previsto que se comportara 
+    ![image](https://user-images.githubusercontent.com/98657146/190698988-7d8bcfe0-9e91-4f1d-83d7-51b9f35441c3.png)  
+    Solución: Tener un método que indique que inició el juego y pueda probar que el jugador inscrito se haya creado 
+    
+    * Este test viola el assert Ya que esta probando ambas cosas y no sabemos cual de las dos es la que espera el desarrollador que lo hizo 
+    ![image](https://user-images.githubusercontent.com/98657146/190699185-e732245c-0351-47a8-807f-cb26adca6442.png)  
+    Solución : hacer dos pruebas diferentes para probar cada caso mencionado en el código de la prueba 
+
+
+    
+    
+    
+
+
+    
+
 
   
 
