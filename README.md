@@ -119,7 +119,28 @@ En este caso el repositorio remoto, es el que está en git y el local es el que 
     
     * Este test viola el assert Ya que esta probando ambas cosas y no sabemos cual de las dos es la que espera el desarrollador que lo hizo 
     ![image](https://user-images.githubusercontent.com/98657146/190699185-e732245c-0351-47a8-807f-cb26adca6442.png)  
-    Solución : hacer dos pruebas diferentes para probar cada caso mencionado en el código de la prueba 
+    Solución : hacer dos pruebas diferentes para probar cada caso mencionado en el código de la prueba  
+    
+3. Principios FIRST 
+  * Fast(rápido) = los test deben poder ejecutarse en cuestión de segundos , ya que esto nos posibilita ejecutar los test muy frecuentemente y poder detectar bugs       de forma rápida y sencilla 
+  * INDEPENDENT(independiente) : todas las pruebas deben ser independientes de las otra 
+  * REPEATABLE(repetible) :  El resultado de las pruebas debe ser el mismo independienteente del servidor 
+  * SELF- VALIDATING (auto evaluable): las pruebas deben ser automatizadas para poder ejecutarlas simplemente al pulsar el botón , todo esto podría pasar mientras       realizamos otra tarea 
+  * TIMELY (oportuno) : Esta última característica se basa en cuándo deberíamos tener desarrolladas las pruebas, que deben estar desarrolladas lo antes posible y       siempre antes de subir código a producción.  
+   **Flujo perfecto de trabajo:**
+   1. Escribir las pruebas.
+   2. Ejecutar las pruebas. Deben fallar, ya que el código a testear no está todavía desarrollado.
+   3. Escribir el código de nuestro producto.
+   4. Ejecutar de nuevo las pruebas. En este caso las pruebas deberían de funcionar y darnos un resultado positivo.
+
+   Sabiendo que significa cada principio, revisando el código POOBCHIS nos damos cuenta que: 
+   *	RAPIDO: Todos los test cumplen este principio ya que después de ingresar los datos, el test corre en 35 milisegundos 
+   *	INDEPENDENCIA: Todos los test cumplen con este principio ya que al correr uno por uno, se corren satisfactoriamente 
+   *	REPETIBLE: Todos los test cumplen con este principio ya que se corren sin importar el servidor
+   *	SELF-VALIDATING: ningún test cumple con este principio ya que se requiere una introducción manual de los datos para realizar el test 
+   *	TIMELY: ningún test cumple con este principio ya que todos se hicieron en base al código en vez de realizar primero la prueba 
+
+
 
 
     
