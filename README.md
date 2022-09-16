@@ -87,7 +87,7 @@ En este caso el repositorio remoto, es el que está en git y el local es el que 
       
 ### UNIT TEST 
 1. Patron de nombramiento:  
-    Para los test del proyecto POOBCHIS vemos que todos tienen una estructura parecida, donde aunque en algunos casos se puede entender lo que hace el test con el       simple nombre, entendemos los test mas por la documentación, para corregir esto deberíamos ponerle un nombre mas diciente , con su escenario correspondiente.
+    Para los test del proyecto POOBCHIS vemos que todos tienen una estructura parecida, donde aunque en algunos casos se puede entender lo que hace el test con el       simple nombre, entendemos los test mas por la documentación, para corregir esto deberíamos ponerle un nombre mas diciente , con su escenario             correspondiente.Para ello vamos a usar la estructura given_when_that.
     * ![image](https://user-images.githubusercontent.com/98657146/190672756-ac434a4a-c271-455e-8664-34fac36ecd63.png)
       Solución : `void givenOnePerson_whenAddYourNameToPlay_thenCreateThePlayerOnTheBoard ()` Asi podemos entender del nombre que el test quiere verificar que se crea el         jugador en el tablero 
       
