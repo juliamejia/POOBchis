@@ -11,7 +11,7 @@ Parcial 1
 ### CraftsmanShip
 
 * SOLID
-  * Single Responsability
+  * Single Responsability principle
       * Podemos encontrar el metodo moveTile dentro de la clase Player el cual se comporta como un "Metodo Dios"  
         <img width="229" alt="image" src="https://user-images.githubusercontent.com/98657146/190303499-89934b60-b88b-42c0-8b83-261724906a28.png"> \
       Funcionalidades que violan el principio:  
@@ -32,7 +32,7 @@ Parcial 1
         * Retorna una casilla  
           <img width="137" alt="image" src="https://user-images.githubusercontent.com/98657146/190306509-4d6b1fc4-524d-4c06-97fb-e361c809d99f.png">
        * **Cómo lo solucionariamos?** Para iniciar se debe proceder a identificar los diferentes procedimientos en el método como lo hicimos en el inciso superior, procediendo así a modulizar la lógica en diferentes funciones que se sean declaradas dentro de este.
-
+   * Interface segregation principle
   
     
   
