@@ -2,6 +2,13 @@ Parcial 1
 ---
 **Nombres**: Julia Mejia, Sebastian Rojas
 
+### Descripción del proyecto
+
+* Poobchis es un proyecto creado para un proposito academico por estudiantes de la escuela de ingenieria, esta es una versión del parques original la cual implementa una variedad de nuevas opciones para jugar, así como tipos de usuarios y entre otras caracteristicas que hacen de este juego una version interesante para interactuar y en la que a nivel de desarrollo se puede presenciar el trabaja enfocado a la Programación dirigida a objetos
+![image](https://user-images.githubusercontent.com/62759668/190569892-f9d59bbf-a5b5-491f-8f50-fce840c7ec34.png)
+
+
+
 ### Paso a paso GIT
 
 * Este proyecto inicialmente se encontraba en una fuente local de uno de los integrantes, para cumplir con las expectativas de la asignación se procedio a inicializar y clonar el proyecto a un repositorio remoto\
@@ -37,17 +44,24 @@ Parcial 1
    * Interface segregation principle
         * **Mala práctica identificada, bien definida:** Para este punto utilizaremos la estructura diseñada como se ve acontinuación
           ![image](https://user-images.githubusercontent.com/62759668/190555022-e8837b5c-d0e3-442a-be53-dae97fb07ff8.png) \
-          Basados en la implementación podemos encontrar que la forma de identificación de la clase Tile es por medio de un String caracteristico, lo cual viola varios principios como Liskov, Interface segregation, entre otros.... También se puede observar que hay un tipo de ficha normal de la cual heredan el resto de tipo de fichas el cuál obliga a que los otros tipos de fichas tengan por defecto toda la lógica de la ficha normal lo cuál nos restringe muchos comportamientos los cuales tendríamos que directamente ir a modificar en caso de extención. Abordaremos la solución planteada enfocadonos en el Interface segregation principle \
+          Basados en la implementación podemos encontrar que la forma de identificación de la clase Tile es por medio de un String caracteristico, lo cual viola varios principios como Liskov, Interface segregation, entre otros.... También se puede observar que hay un tipo de ficha normal de la cual heredan el resto de tipo de fichas el cuál obliga a que los otros tipos de fichas tengan por defecto toda la lógica de la ficha normal lo cuál nos restringe muchos comportamientos los cuales tendríamos que directamente ir a modificar en caso de extención. Abordaremos la solución planteada enfocadonos en el Interface segregation principle
           ![image](https://user-images.githubusercontent.com/62759668/190550867-f384c4e9-18b7-4091-81a7-4e0033d38653.png) \
           ![image](https://user-images.githubusercontent.com/62759668/190551165-666c4fd2-c17d-4008-af5b-a498389f7c1e.png)
-        * **Cómo lo solucionariamos?** Para iniciar creariamos una interface Tile la cual implementarian todos los tipos de fichas que podemos llegar a encontrar, incluyendo la normal. No obstante, corregimos 
-          
+        * **Cómo lo solucionariamos?** Para iniciar creariamos una interface Tile la cual implementarian todos los tipos de fichas que podemos llegar a encontrar, incluyendo la normal. Aplicando un metodo *Move* el cual realizaría el movimiento inidicado según las diferentes especificaciones de las fichas
+          ![image](https://user-images.githubusercontent.com/62759668/190559186-a8b6cf3e-680d-4ee2-97a7-af7014430fb0.png) \
+          Ahora supongamos que segun cada ficha se requiere un movimiento especial o una accion diferente a las otras (Ej. La FichaCohete mueve de 5 en 5 lo cual realizaria el metodo *move5*, la ficha Ventajosa se mueve de seguro en seguro lo cual realizaria *moveSafe*, etc...) esto nos obligaria a introducir los metodos de acceso en la interface haciendo que todas las fichas tengan que implementar dichos metodos y en dado caso que no sean implementables por el metodo tengan que arrojar una excepción \
+          ![image](https://user-images.githubusercontent.com/62759668/190560878-79c1aad3-7de0-4301-8b67-4daee9bdf4e0.png) \
+          Situación que se  puede facilmente evitar gracias al principio de Segregación de dependencias de la siguiente manera \
+          ![image](https://user-images.githubusercontent.com/62759668/190562856-ac890d2c-d486-43ac-a1be-e53224ae6a0a.png) \
+          Se separa las operaciones en varias interfaces como se ve en el diagra, de modo que cada ficha sólo dependerá de de su propia interfaz y de la general, por lo que un cambio en la interfaz general que no implique a algúna ficha no afectará a su implementación y compilación. \
+          Al crear interfaces más pequeñas, tenemos la ventaja adicional de que, si es necesario crear nuevas implementaciones de la interfaz para un caso de uso concreto, no necesitaremos implementar también el resto de métodos que no están relacionados con ese caso de uso.
+          Cumpliendo con el proposito del principio. **ninguna clase debería depender de métodos que no usa.** 
 
-          
+* Patrón de diseño
+    * Un patron que podemos ver que se intento llevar a cabo fue el patron Mediador, ya que en el proyecto podemos encontrar ciertas clases tales como Poobchis las cuales sirven como mediadores para la comunicacion entre la vista y el dominio, esto con el proposito de reducir las dependencias \
+      ![image](https://user-images.githubusercontent.com/62759668/190568131-1d5bb29a-bf7e-4c6c-9efe-00bfe7685ff0.png)
 
-          
+* Tipo del patron
+    * Este patron se identifica como un patron de comportamiento dirigido a objetos tal como los especifica la siguiente tabla \
+      ![image](https://user-images.githubusercontent.com/62759668/190568567-d87bb5f2-8d78-4449-9aa3-9e1bbfaed387.png)
 
-
-  
-    
-  
