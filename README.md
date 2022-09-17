@@ -134,7 +134,7 @@ En este caso el repositorio remoto, es el que está en git y el local es el que 
    4. Ejecutar de nuevo las pruebas. En este caso las pruebas deberían de funcionar y darnos un resultado positivo.
 
    Sabiendo que significa cada principio, revisando el código POOBCHIS nos damos cuenta que: 
-   *	RAPIDO: Todos los test cumplen este principio ya que después de ingresar los datos, el test corre en 35 milisegundos 
+   *	RAPIDO: ningun test cumplen este principio ya que después desde que inicia la prueba hasta que termina transcurre mucho tiempo. 
    *	INDEPENDENCIA: Todos los test cumplen con este principio ya que al correr uno por uno, se corren satisfactoriamente 
    *	REPETIBLE: Todos los test cumplen con este principio ya que se corren sin importar el servidor
    *	SELF-VALIDATING: ningún test cumple con este principio ya que se requiere una introducción manual de los datos para realizar el test 
